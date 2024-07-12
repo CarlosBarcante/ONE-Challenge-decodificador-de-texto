@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Decodificador de Texto</title>
+</head>
+
+<body>
+    <header><img src="./assets/logo.svg" alt="logo da alura"></header>
+    <div id='input-area'>
+        <textarea name="user-text" id="user-text">Digite seu texto</textarea>
+        <p id='input-area-warning'><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento.
+        </p>
+        <div id='input-area-buttons'>
+            <button onclick={encrypt()} id='button-encrypt'>Criptografar</button>
+            <button onclick={decrypt()} id='button-decrypt'>Descriptografar</button>
+        </div>
+    </div>
+
+    <div id='result-area'>
+        <img src="./assets/waiting.svg" alt="imagem de espera pro usuário inserir o texto">
+        <h2>Nenhuma mensagem encontrada</h2>
+        <p>Digite um texto que você deseja cripstografar ou descriptografar.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/1038cc3edc.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
